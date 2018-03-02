@@ -1,0 +1,41 @@
+ <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 search-field">
+        <div class="candidate-details-container">
+            <div class="section">
+                <div class="back" ng-click="navigateToCandidateLists()">< Back</div>
+                <div class="candidate-photo">
+                    <img class="candidate-image" ng-src="styles/images/{{candidateDetail.photo}}" width="80"></span>
+                </div>
+                <div class="specific-candidate-info">
+                    <div>{{candidateDetail.firstName}} {{candidateDetail.lastName}}</div>
+                    <div>{{candidateDetail.title}}, {{candidateDetail.currentCompany}}</div>
+                    <div>
+                        <span class="description">{{candidateDetail.graduatedSchool}}</span>
+                        <br>
+                        <span class="description">{{candidateDetail.currentLocation}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="candidate-experience-container">
+                    <h4>Experience</h4>
+                    <p class="experience-description">{{candidateDetail.experience}}</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="candidate-experience-container">
+                    <h4>Education</h4>
+                    <p class="experience-description">{{candidateDetail.education}}</p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="candidate-experience-container">
+                    <h4>Skills</h4>
+                    <p class="experience-description">{{candidateDetail.skills}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>

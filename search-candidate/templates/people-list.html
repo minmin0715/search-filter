@@ -1,0 +1,27 @@
+ <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 search-field">
+        <div class="search-input">
+            <input class="form-group search-part" type="text" ng-model="searchInfo">
+            <button class="search-button">search</button>
+        </div>
+        <div class="search-results">
+            <h5>{{searchInfo}}</h5>
+            <div class="candidate-wrapper" ng-repeat="candidate in candidates | searchCandidates:searchInfo">
+                <div class="candidate-details" ng-click="navigateToCandidate(candidate)">
+                    <div class="candidate-list-container">
+                        <div class="candidate-pic">
+                            <img class="candidate-image" ng-src="styles/images/{{candidate.photo}}" width="50"></span>
+                        </div>
+                        <div class="candidate-info">
+                            <span class="candidate-name">{{candidate.firstName}} {{candidate.lastName}}</span>
+                            <br> {{candidate.title}} {{candidate.currentCompany}}
+                            <br> {{candidate.currentLocation}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>

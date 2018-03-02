@@ -1,0 +1,110 @@
+body {
+    background-color: #E8E8E8;
+}
+.search-field {
+    padding-top: 20px;
+    margin: auto;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.search-part {
+    margin-left: 20px;
+}
+
+.search-results h5{
+    margin-left: 20px;
+}
+
+input {
+    width: 75%;
+}
+
+.search-button {
+    background-color: purple;
+    color: white;
+    width: 90px;
+    float: right;
+    margin-right: 20px;
+}
+
+.candidate-details {
+    margin: auto;
+    cursor: pointer;
+}
+
+.candidate-list-container {
+    display: flex;
+    align-items: center;
+}
+
+.candidate-pic {
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.candidate-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.candidate-wrapper,.section{
+    border-top: 1px solid #f0eded;
+    border-left: 1px solid #f0eded;
+    border-right: 1px solid #f0eded;
+}
+
+.section{
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+
+.candidate-name {
+    color: purple;
+}
+
+.candidate-image {
+    border-radius: 50%;
+}
+
+.section:first-child {
+    padding: 20px;
+    text-align: center;
+    border-top: none;
+}
+
+.specific-candidate-info {
+    display: block;
+    margin: auto;;
+}
+
+.candidate-photo {
+    padding-top: 20px;
+    display: block;
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    background-image: url('./images/background.jpg')
+}
+
+.description {
+    color: grey;
+}
+
+.experience-description {
+    color: grey;
+    font-size: 9pt;
+}
+
+.candidate-experience-container {
+    width: 80%;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.back {
+    text-align: left;
+    cursor: pointer;
+}
